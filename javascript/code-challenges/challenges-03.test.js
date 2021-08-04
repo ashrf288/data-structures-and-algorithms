@@ -87,7 +87,7 @@ return newArr
 CHALLENGE 6 - Stretch Goal
 
 Write a function named getBaseStatGreaterThan that, given the snorlaxData, below,
- and an integer as input, uses filter to return an array containing all stats with a 
+ and an integer as input, uses filter to return an array containing all stats with a
  baseStat greater than the integer.
 For example, getBaseStatGreaterThan(snorlaxData.stats, 50) will return
  an array containing the 'special-defense' and 'special-attack' objects.
@@ -143,7 +143,7 @@ For example, getStatName(snorlaxData.stats, 50) will return ['special-defense', 
 const getStatName = (arr, minBaseStat) => {
   // Solution code here...
 
- 
+
 
 
 };
