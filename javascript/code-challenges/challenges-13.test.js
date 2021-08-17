@@ -46,7 +46,11 @@ For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['this
 
 const findHappiness = (arr) => {
   // Solution code here...
-
+  let regx=/:\)/;
+  let array=[];
+  arr.forEach(item=> {
+    if(regx.test(item)) array.push(item)})
+    return array;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -59,7 +63,13 @@ For example, (123) 456-7890 returns 1234567890
 
 const standardizePhoneNumbers = (arr) => {
   // Solution code here...
-
+   let regx=/\w/;
+  let array= arr.map(item=>
+      item.split('').filter(elem=> regx.test(elem)).reduce(function (a,b) {
+        return `${a}${b}`
+      })
+   )
+   return array;
 };
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 
@@ -71,7 +81,11 @@ For example, 'abcdefg' returns 'bdf'
 
 const onlyOddChars = (str) => {
   // Solution code here...
-  
+  function concat(a,b) {
+    return `${a}${b}`
+    }
+  let theStr=str.split('').filter((item,index)=> index%2==1 ).reduce(concat,'')
+    return theStr;
 };
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6 
@@ -80,7 +94,10 @@ Write a function named allHappy that takes in an array of strings and returns a 
 ------------------------------------------------------------------------------------------------ */
 const allHappy = (arr) => {
   // Solution code here...
-
+ let newArr=arr.filter(ele=>{
+   return ele.includes(':)')
+ })
+ return newArr.length===arr.length
 };
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
