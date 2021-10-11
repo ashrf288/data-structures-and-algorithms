@@ -6,7 +6,7 @@ nput	            Output
 [2,4,6,-8], 5	   [2,4,5,6,-8]
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![a](![a](/python/assets/insert_array.png))
+![a](/python/assets/insert_array.png)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->
