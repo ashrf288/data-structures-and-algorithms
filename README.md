@@ -29,6 +29,6 @@ To run your tests
 | Tables   |      Are      |  
 |----------|:-------------:|
 |1 |  [array-reverse](python/challenges/array-reverse/README.md) | 
-|2 |      |
+|2 |  [insert_array](python/challenges/insert_array/README.md)      |
 | 3 |  |
     
