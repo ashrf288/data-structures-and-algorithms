@@ -30,5 +30,5 @@ To run your tests
 |----------|:-------------:|
 |1 |  [array-reverse](python/challenges/array-reverse/README.md) | 
 |2 |  [insert_array](python/challenges/insert_array/README.md)      |
-| 3 |  |
+| 3 |  [binary_search](python/challenges/array_binary_search/README.md)|
     
