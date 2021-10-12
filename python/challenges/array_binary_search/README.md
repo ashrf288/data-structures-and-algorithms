@@ -6,7 +6,7 @@ Input	                             Output
 [4, 8, 15, 16, 23, 42], 15          	2
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![binary](/assets/binary.png)
+![binary](/python/assets/binary.png)
 ## Approach & Efficiency
 <!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->
 
