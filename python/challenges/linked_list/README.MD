@@ -9,6 +9,9 @@ linked_list.py:
  test_linked_list.py:
 [test_linked list .py](/home/ashrf288/401/data-structures-and-algorithms/python/tests/test_linked_list.py)
 
+pr link
+[pull request](https://github.com/ashrf288/data-structures-and-algorithms/pull/25)
+
 ## Challenge
 <!-- Description of the challenge -->
 Create a Linked List class
