@@ -79,7 +79,7 @@ def test_linked_list_insert_twice():
   assert ll.head.next.data == 1
 
 
-def test_insert():
+def test_includes():
     
     ll=LinkedList()
     ll.insert(1)
@@ -89,3 +89,15 @@ def test_insert():
     expected=True
     actuall=ll.includes(1)
     assert actuall==expected
+
+
+def test_toString():
+    ll=LinkedList()
+    ll.insert(1)
+    ll.insert(0)
+
+     #output
+    expected= "{ 0 } -> { 1 } -> NULL"
+    actul= ll.toString()
+
+    assert expected==actul
