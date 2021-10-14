@@ -1,5 +1,5 @@
 from challenges.linked_list.linked_list import (LinkedList,Node)
-
+import pytest
 
 
 def test_node_has_int_data():
@@ -36,10 +36,11 @@ def test_node_is_a_Node():
     # Assert
     assert actual == expected
 
-# def test_node_without_value():
-#     node = Node()
-#     if node==None:   
-#       raise (TypeError,'error')
+def test_node_without_value():
+    with pytest.raises(TypeError):
+         Node()
+
+
 
 
 def test_new_linked_list_is_empty():
