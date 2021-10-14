@@ -12,7 +12,11 @@ class LinkedList:
     self.head = None
 
   def insert(self, value):
-   
+
+    '''
+    takes in a value and insert this value with a refernce to the old head node abd push this value 
+    to be the new head of linked list 
+    '''   
     # create new node
     self.head = Node(value, self.head)
     return self.head 
@@ -20,6 +24,10 @@ class LinkedList:
   # def includes(self,value):
       
   def includes(self,value):
+      '''
+    returns a bollean if the nodes exiest in the linked list
+     and false if not 
+    '''
          
   #   Current <-- Head
       current=self.head

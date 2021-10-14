@@ -25,7 +25,8 @@ Returns: a string representing all the values in the Linked List, formatted as:
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-  linked list was used for this approch 
+  linked list was used for this approch  as for the link list big o :
+  ![](https://miro.medium.com/max/3000/1*3IlTLK_S0HmATuYQGxcbUA.png)
 ## API
 <!-- Description of each method publicly available to your Linked List -->
 
@@ -40,42 +41,31 @@ class Node:
 
   Methods
   -------
-  __init__(data, next_):
+  ## __init__ 
+  (data, next_):
       the constructor method for the class, it takes two parameters, the data parameter is the a reference to the data the node will hold, and the next_ 
+   
 
-  """
+## `insert`
 
-  def __init__(self, data, next_ = None):
-    self.data = data
-    self.next = next_
-###############################################################################
+Arguments: value
 
-class LinkedList:
-  """
-  A class for creating instances of a Linked List.
-  
-  Data and other attributes defined here:
-  
-  head: Node | None
+Returns: nothing
 
-  Methods defined here
+Adds a new node with that value to the head of the list with an O(1) Time performance.
+ 
+## `includes`
 
-  insert(value: any)
-  contains(value: any) -> bool
-  """
+Arguments: value
 
-  def __init__(self):
-    self.head = None
+Returns: Boolean
 
-  def insert(self, value):
-    """"
-    Insert creates a Node with the value that was passed and adds
-    it to the head of the linked list shifting all other values down
+Indicates whether that value exists as a Node’s value somewhere within the list.
 
-    arguments:
-    value : any
+## `to string`
 
-    returns: None
-    """
-    # create new node
-    self.head = Node(value, self.head)  
+Arguments: none
+
+Returns: a string representing all the values in the Linked List, formatted as:
+
+`"{ a } -> { b } -> { c } -> NULL"`
