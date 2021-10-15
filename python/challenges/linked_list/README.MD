@@ -4,7 +4,7 @@
 
 
 linked_list.py:
- [linked list .py](/home/ashrf288/401/data-structures-and-algorithms/python/challenges/linked_list/linked_list.py)
+ [linked list .py](python/challenges/linked_list/linked_list.py)
 
  test_linked_list.py:
 [test_linked list .py](/home/ashrf288/401/data-structures-and-algorithms/python/tests/test_linked_list.py)
