@@ -43,7 +43,7 @@ class LinkedList:
       
       return False
 
-  def toString(self):
+  def __str__(self):
    '''
   to string
 Arguments: none
@@ -68,13 +68,75 @@ Returns: a string representing all the values in the Linked List,
     #   Current <-- Current.Next
   #     return TRUE
    return string
-      
-  
+   
+  def append(self,value):
+      '''
+        this function will look for the nide that has node.next as none which
+        will represnt the the last node then it will append the value(node)
+        and it will give the new created node to that node .next
+      '''
+      current=self.head
+      while current :
+  #   IF Current.next is equal to none that means this is the last node 
+        if current.next==None:
+          
+          current.next=Node(value)
+          break
+        current=current.next           
+  #   Current <-- Current.Next
 
+            
+      
+  def append_multi(self,list):
+    '''
+    takes in s list of nodes and add them to the end of the 
+    linked list 
+    '''
+    for item in list:
+        self.append(item)
+    return ll 
+
+
+  def insertBefore(self, targetValue, value):
+    # create new node
+    newNode = Node(value)
+    # find target node to insert
+    node = self.head
+    if node != None:
+        # search nodes
+        while node:
+            if node.next == None:
+                break
+            if node.next.data == targetValue:
+                newNode.next = node.next
+                node.next = newNode
+                break
+            else:
+                node = node.next
+  def insert_after(self,value,new_value):
+    current = self.head
+    while current is not None:
+        if current.data == value:
+            break
+    current = current.next
+    if current is None:
+        print("item not in the list")
+    else:
+        new_node = Node(new_value)
+        new_node.next = current.next
+        current.next = new_node
 
 ll=LinkedList()
 ll.insert(1)
-ll.insert(1)
-ll.insert(1)
+ll.insert(2) 
+ll.insert(3) 
+# #  # ll.insert(1)
+# #  # ll.append(5)
+# # ll.insert(5)
+# # ll.insert(4)
+# # ll.append_multi([5,3,3])
+# #  # ll.append_multi([5,3,2]) 
+# print(ll.insertBefore(1,3))
+# ll.insert_after(1,4)
+# print(str(ll)) 
 
-print(ll.toString())

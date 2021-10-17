@@ -81,3 +81,53 @@ Arguments: none
 Returns: a string representing all the values in the Linked List, formatted as:
 
 `"{ a } -> { b } -> { c } -> NULL"`
+
+
+# lab 6 
+
+# Challenge Summary
+<!-- Description of the challenge -->
+
+Write the following methods for the Linked List class:
+
+`append`
+
+arguments: new value
+
+adds a new node with the given value to the end of the list
+
+`insert before`
+
+arguments: value, new value
+
+adds a new node with the given new value immediately before the first node that has the value specified
+
+`insert after`
+
+arguments: value, new value
+
+adds a new node with the given new value immediately after the first node that has the value specifie
+
+
+
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+
+
+
+
+
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+
+## Solution
+<!-- Show how to run your code, and examples of it in action -->
+[x]Can successfully add a node to the end of the linked list
+[x]Can successfully add multiple nodes to the end of a linked list
+[x]Can successfully insert a node before a node located i the middle of a linked list
+[x]Can successfully insert a node before the first node of a linked list
+[]Can successfully insert after a node in the middle of the linked list
+[x]Can successfully insert a node after the last node of the linked list

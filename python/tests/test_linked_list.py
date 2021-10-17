@@ -1,6 +1,5 @@
 from challenges.linked_list.linked_list import (LinkedList,Node)
-import pytest
-
+# import pytest
 
 def test_node_has_int_data():
     # Arrange any data that you need to run your test
@@ -36,9 +35,9 @@ def test_node_is_a_Node():
     # Assert
     assert actual == expected
 
-def test_node_without_value():
-    with pytest.raises(TypeError):
-         Node()
+# def test_node_without_value():
+#     with pytest.raises(TypeError):
+#          Node()
 
 
 
@@ -99,6 +98,41 @@ def test_toString():
 
      #output
     expected= "{ 0 } -> { 1 } -> NULL"
-    actul= ll.toString()
+    actul= str(ll)
 
+    assert expected==actul
+
+def test_append():
+    
+    #input
+    ll=LinkedList()
+    ll.insert(1)
+    ll.insert(0)
+    ll.append(2)
+    #output
+    expected= "{ 0 } -> { 1 } -> { 2 } -> NULL"
+    actul= str(ll)
+    assert expected==actul
+    
+def test_append_multi():
+    
+    #input
+    ll=LinkedList()
+    ll.insert(1)
+    ll.insert(1)
+    ll.append_multi([4,3,3])
+    #output
+    expected= "{ 1 } -> { 1 } -> { 4 } -> { 3 } -> { 3 } -> NULL"
+    actul= str(ll)
+    assert expected==actul
+
+def test_insertBefore():
+      #input
+    ll=LinkedList()
+    ll.insert(1)
+    ll.insert(2) 
+    ll.insert(3) 
+    ll.insertBefore(1,3)
+    expected= "{ 3 } -> { 2 } -> { 3 } -> { 1 } -> NULL"
+    actul=str(ll)
     assert expected==actul
