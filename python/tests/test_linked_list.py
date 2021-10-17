@@ -126,14 +126,13 @@ def test_append_multi():
     actul= str(ll)
     assert expected==actul
 
-# def test_insert_before():
-#       #input
-#     ll=LinkedList()
-#     ll.insert(1)
-#     ll.insert(2)
-#     ll.insert(3)
-#     ll.insert_before(3,5)
-
-#     expected= "{ 1 } -> { 2 } -> { 3 } -> NULL"
-#     actul=str(ll)
-#     assert expected==actul
+def test_insertBefore():
+      #input
+    ll=LinkedList()
+    ll.insert(1)
+    ll.insert(2) 
+    ll.insert(3) 
+    ll.insertBefore(1,3)
+    expected= "{ 3 } -> { 2 } -> { 3 } -> { 1 } -> NULL"
+    actul=str(ll)
+    assert expected==actul
