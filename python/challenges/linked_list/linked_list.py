@@ -124,36 +124,41 @@ Returns: a string representing all the values in the Linked List,
     newNode = Node(value)
     # find target node to insert
     node = self.head
-    if node == None:
-        print ('There aren\'t any nodes to insert before!')
-    else:
-        found = False
+    if node != None:
         # search nodes
         while node:
             if node.next == None:
                 break
             if node.next.data == targetValue:
-                found = True
                 newNode.next = node.next
                 node.next = newNode
                 break
             else:
                 node = node.next
-        if found != True:
-            print (f'Your target node of {targetValue} was not found in the list!')
- 
-
+  def insert_after(self,value,new_value):
+    current = self.head
+    while current is not None:
+        if current.data == value:
+            break
+    current = current.next
+    if current is None:
+        print("item not in the list")
+    else:
+        new_node = Node(new_value)
+        new_node.next = current.next
+        current.next = new_node
 
 ll=LinkedList()
 ll.insert(1)
 ll.insert(2) 
 ll.insert(3) 
-#  # ll.insert(1)
-#  # ll.append(5)
-# ll.insert(5)
-# ll.insert(4)
-# ll.append_multi([5,3,3])
-#  # ll.append_multi([5,3,2]) 
-print(ll.insertBefore(1,3))
-print(str(ll)) 
+# #  # ll.insert(1)
+# #  # ll.append(5)
+# # ll.insert(5)
+# # ll.insert(4)
+# # ll.append_multi([5,3,3])
+# #  # ll.append_multi([5,3,2]) 
+# print(ll.insertBefore(1,3))
+# ll.insert_after(1,4)
+# print(str(ll)) 
 
