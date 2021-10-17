@@ -96,29 +96,7 @@ Returns: a string representing all the values in the Linked List,
         self.append(item)
     return ll 
 
-  def insert_before(self,value,newValue):
-    '''
-    arguments: value, new value
-    adds a new node with the given new value immediately before the
-     first node that has the value specifie
-    '''
-    # newNode = Node(newValue)
-    # current=self.head
-    # if current == None:
-    #   print ('There aren\'t any nodes to insert before!')
-    # else:
-    #     if current.data == value:
-    #       newNode.next = self.head
-    #       self.head = newNode
-       
-    #     while current.next!=None:
 
-    #       if current.next.data==value:
-    #           newNode.next=current.next
-    #           current.next=newNode
-    #           return
-    #       else:
-    #         node=current.next
   def insertBefore(self, targetValue, value):
     # create new node
     newNode = Node(value)
