@@ -68,7 +68,25 @@ Returns: a string representing all the values in the Linked List,
     #   Current <-- Current.Next
   #     return TRUE
    return string
+   
+  def append(self,value):
+      '''
+        this function will look for the nide that has node.next as none which
+        will represnt the the last node then it will append the value(node)
+        and it will give the new created node to that node .next
+      '''
+      current=self.head
+      while current :
+  #   IF Current.next is equal to none that means this is the last node 
+        if current.next==None:
+          
+          current.next=Node(value)
+          break
+        current=current.next           
+  #   Current <-- Current.Next
+            
       
+   
   
 
 
@@ -76,5 +94,6 @@ ll=LinkedList()
 ll.insert(1)
 ll.insert(1)
 ll.insert(1)
-
+ll.append(5)
+print(str(ll))
 
