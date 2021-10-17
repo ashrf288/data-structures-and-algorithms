@@ -101,3 +101,39 @@ def test_toString():
     actul= str(ll)
 
     assert expected==actul
+
+def test_append():
+    
+    #input
+    ll=LinkedList()
+    ll.insert(1)
+    ll.insert(0)
+    ll.append(2)
+    #output
+    expected= "{ 0 } -> { 1 } -> { 2 } -> NULL"
+    actul= str(ll)
+    assert expected==actul
+    
+def test_append_multi():
+    
+    #input
+    ll=LinkedList()
+    ll.insert(1)
+    ll.insert(1)
+    ll.append_multi([4,3,3])
+    #output
+    expected= "{ 1 } -> { 1 } -> { 4 } -> { 3 } -> { 3 } -> NULL"
+    actul= str(ll)
+    assert expected==actul
+
+# def test_insert_before():
+#       #input
+#     ll=LinkedList()
+#     ll.insert(1)
+#     ll.insert(2)
+#     ll.insert(3)
+#     ll.insert_before(3,5)
+
+#     expected= "{ 1 } -> { 2 } -> { 3 } -> NULL"
+#     actul=str(ll)
+#     assert expected==actul

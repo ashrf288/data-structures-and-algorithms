@@ -84,16 +84,43 @@ Returns: a string representing all the values in the Linked List,
           break
         current=current.next           
   #   Current <-- Current.Next
+
             
       
-   
-  
+  def append_multi(self,list):
+    '''
+    takes in s list of nodes and add them to the end of the 
+    linked list 
+    '''
+    for item in list:
+        self.append(item)
+    return ll 
+
+  def insert_before(self,value,newValue):
+    '''
+    arguments: value, new value
+    adds a new node with the given new value immediately before the
+     first node that has the value specifie
+    '''
+    current=self.head
+    print (current.data)
+    while current:
+       if current.data==value:
+          current.data=newValue
+          current.next=value
+          
+ 
 
 
 ll=LinkedList()
 ll.insert(1)
-ll.insert(1)
-ll.insert(1)
-ll.append(5)
-print(str(ll))
+#  # ll.insert(1) 
+#  # ll.insert(1)
+#  # ll.append(5)
+# ll.insert(5)
+# ll.insert(4)
+ll.append_multi([4,3,3])
+#  # ll.append_multi([5,3,2]) 
+# ll.insert_before(5,3)
+print(str(ll)) 
 
