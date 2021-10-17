@@ -1,4 +1,7 @@
-from linked_list import Node,  LinkedList
+from challenges.linked_list.linked_list import (LinkedList,Node)
+# from pytest
+
+
 def test_node_has_int_data():
     # Arrange any data that you need to run your test
     expected = 1
@@ -9,7 +12,6 @@ def test_node_has_int_data():
 
     # Assert
     assert actual == expected
-
 
 def test_node_has_str_data():
     # Arrange any data that you need to run your test
@@ -34,9 +36,11 @@ def test_node_is_a_Node():
     # Assert
     assert actual == expected
 
-def test_node_without_value():
-  with pytest.raises(TypeError):
-    node = Node()
+# def test_node_without_value():
+#     with pytest.raises(TypeError):
+#          Node()
+
+
 
 
 def test_new_linked_list_is_empty():
@@ -74,3 +78,27 @@ def test_linked_list_insert_twice():
   # Assert
   assert actual == expected
   assert ll.head.next.data == 1
+
+
+def test_includes():
+    
+    ll=LinkedList()
+    ll.insert(1)
+    ll.insert(0)
+
+    ##
+    expected=True
+    actuall=ll.includes(1)
+    assert actuall==expected
+
+
+def test_str():
+    ll=LinkedList()
+    ll.insert(1)
+    ll.insert(0)
+
+     #output
+    expected= "{ 0 } -> { 1 } -> NULL"
+    actul= str(ll)
+
+    assert expected==actul

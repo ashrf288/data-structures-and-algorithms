@@ -99,6 +99,6 @@ def test_toString():
 
      #output
     expected= "{ 0 } -> { 1 } -> NULL"
-    actul= ll.toString()
+    actul= str(ll)
 
     assert expected==actul

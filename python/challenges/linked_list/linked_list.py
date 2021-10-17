@@ -43,7 +43,7 @@ class LinkedList:
       
       return False
 
-  def toString(self):
+  def __str__(self):
    '''
   to string
 Arguments: none
@@ -77,4 +77,4 @@ ll.insert(1)
 ll.insert(1)
 ll.insert(1)
 
-print(ll.toString())
+
