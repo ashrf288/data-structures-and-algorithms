@@ -102,25 +102,37 @@ Returns: a string representing all the values in the Linked List,
     adds a new node with the given new value immediately before the
      first node that has the value specifie
     '''
+    newNode = Node(newValue)
     current=self.head
-    print (current.data)
-    while current:
-       if current.data==value:
-          current.data=newValue
-          current.next=value
-          
+    if current == None:
+      print ('There aren\'t any nodes to insert before!')
+    else:
+        if current.data == value:
+          newNode.next = self.head
+          self.head = newNode
+       
+        while current.next!=None:
+
+          if current.next.data==value:
+              newNode.next=current.next
+              current.next=newNode
+              return
+          else:
+            node=current.next
+      
  
 
 
 ll=LinkedList()
 ll.insert(1)
-#  # ll.insert(1) 
+ll.insert(2) 
+ll.insert(3) 
 #  # ll.insert(1)
 #  # ll.append(5)
 # ll.insert(5)
 # ll.insert(4)
-ll.append_multi([4,3,3])
+# ll.append_multi([5,3,3])
 #  # ll.append_multi([5,3,2]) 
-# ll.insert_before(5,3)
+print(ll.insert_before(2,5))
 print(str(ll)) 
 
