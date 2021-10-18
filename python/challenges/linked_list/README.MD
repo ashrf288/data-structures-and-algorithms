@@ -121,7 +121,7 @@ adds a new node with the given new value immediately after the first node that h
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-
+![](/assets/whiteboard_zip.jpg)
 
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
