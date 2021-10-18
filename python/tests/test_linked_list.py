@@ -1,5 +1,5 @@
 from challenges.linked_list.linked_list import (LinkedList,Node)
-# import pytest
+
 
 def test_node_has_int_data():
     # Arrange any data that you need to run your test
@@ -135,4 +135,15 @@ def test_insertBefore():
     ll.insertBefore(1,3)
     expected= "{ 3 } -> { 2 } -> { 3 } -> { 1 } -> NULL"
     actul=str(ll)
+    assert expected==actul
+
+def test_insert_after():
+    #input
+    ll=LinkedList()
+    ll.insert(1)
+    ll.insert(2)
+    ll.insert_after(1,22)
+    #output
+    expected='{ 2 } -> { 1 } -> { 22 } -> NULL'
+    actul= str(ll)
     assert expected==actul

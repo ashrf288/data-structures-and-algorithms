@@ -20,7 +20,11 @@ class LinkedList:
     # create new node
     self.head = Node(value, self.head)
     return self.head 
+  
 
+  def __iter__(self):
+      """Tell Python that this class is iterable"""
+      return self
   # def includes(self,value):
       
   def includes(self,value):
@@ -94,7 +98,7 @@ Returns: a string representing all the values in the Linked List,
     '''
     for item in list:
         self.append(item)
-    return ll 
+    return 'll' 
 
 
   def insertBefore(self, targetValue, value):
@@ -113,30 +117,50 @@ Returns: a string representing all the values in the Linked List,
                 break
             else:
                 node = node.next
+
   def insert_after(self,value,new_value):
     current = self.head
+    
     while current is not None:
         if current.data == value:
-            break
-    current = current.next
-    if current is None:
-        print("item not in the list")
-    else:
-        new_node = Node(new_value)
-        new_node.next = current.next
-        current.next = new_node
+          newNode=Node(new_value,current.next)
+          current.next=newNode
+          break
+        current = current.next  
+
+  # @classmethod
+  # def zipLists(cls,list1,list2):
+  #      zip_ll=LinkedList()
+  #      current = list1.head
+  #      current2 = list2.head
+  #      while current !=None:
+  #        zip_ll.insert(current.data)
+  #        zip_ll.insert(current2.data)
+  #       #  zip_ll.insertBefore(i.next,)
+  #        current=current.next
+
+  #      return zip_ll  
+      
+
+
 
 ll=LinkedList()
 ll.insert(1)
-ll.insert(2) 
-ll.insert(3) 
+ll.insert(2)
+ll2=LinkedList()
+ll2.insert(3)
+ll2.insert(4)
+# ll.insert(3) 
 # #  # ll.insert(1)
 # #  # ll.append(5)
 # # ll.insert(5)
 # # ll.insert(4)
 # # ll.append_multi([5,3,3])
-# #  # ll.append_multi([5,3,2]) 
-# print(ll.insertBefore(1,3))
-# ll.insert_after(1,4)
-# print(str(ll)) 
+# #  # ll.append_multi([5,3,2])
+print(str(ll))  
+ll.insert_after(1,22)
+print(str(ll)) 
+
+
+print(str(ll2)) 
 
