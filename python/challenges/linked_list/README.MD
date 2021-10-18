@@ -114,14 +114,14 @@ adds a new node with the given new value immediately after the first node that h
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 
-![white](/assets/whiteboard_zip.jpg)
+
 
 
 
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-![](/assets/whiteboard_zip.jpg)
+
 
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
@@ -152,7 +152,7 @@ Return: Linked List, zipped as noted below
 `head -> [1] -> [5] -> [3] -> [9] -> [2] -> [4] -> X`
 ## Approach & Efficiency
 
-![](/assets/whiteboard_zip.jpg)
+![white](./assets/whiteboard_zip.jpg)
 
 
 
