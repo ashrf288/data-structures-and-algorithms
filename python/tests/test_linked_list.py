@@ -162,3 +162,27 @@ def test_():
   expected='{ 1 } -> { 5 } -> { 3 } -> { 9 } -> { 2 } -> { 4 } -> NULL'
   actul= str(LinkedList.zipLists(ll, ll2))
   assert expected==actul
+
+
+def test_kth_from_end():
+    #input
+    ll = LinkedList()
+    ll.insert(2)
+    ll.insert(8)
+    ll.insert(3)
+    ll.insert(1) 
+    #output
+    actul=ll.kth_from_end(0)
+    expected=2
+    assert actul==expected
+def test_kth_from_end2():
+    #input
+    ll = LinkedList()
+    ll.insert(2)
+    ll.insert(8)
+    ll.insert(3)
+    ll.insert(1) 
+    #output
+    actul=ll.kth_from_end(2)
+    expected=3
+    assert actul==expected

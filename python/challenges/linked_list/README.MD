@@ -129,17 +129,36 @@ adds a new node with the given new value immediately after the first node that h
 [x]Can successfully add multiple nodes to the end of a linked list
 [x]Can successfully insert a node before a node located i the middle of a linked list
 [x]Can successfully insert a node before the first node of a linked list
-[]Can successfully insert after a node in the middle of the linked list
+[x]Can successfully insert after a node in the middle of the linked list
 [x]Can successfully insert a node after the last node of the linked list
 
 
 
-## lab 7
+# lab 7 
+
+##  Challenge Summary
+
+`kth from end`
+k-th value from the end of a linked list.
+
+
+## Approach & Efficiency
+
+
+## Solution
+
+[x]argument: a number, k, as a parameter.
+[x]Return the node’s value that is k places from the tail of the linked list.
+[]write unit tests
+
+
+
+## lab 8
 
 # Challenge Summary
 
 
-Write a function called zip lists
+Write a function called `zip lists`
 Arguments: 2 linked lists
 Return: Linked List, zipped as noted below
 

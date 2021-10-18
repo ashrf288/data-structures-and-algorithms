@@ -155,19 +155,37 @@ class LinkedList:
         list.head = prev
         return list
 
+    def kth_from_end(self,k):
+        '''
+         revrse the linked list 
+         creat a counter if the counter value =k then return 
+         node.data at that number
+        '''
+        list=LinkedList.reverse(self)
+        current=list.head
+        count=0
+        while current:
+            if k==count:
+                data=current.data
+                break
+            count+=1
+            current=current.next
+        return data
+
 ll = LinkedList()
 ll.insert(2)
+ll.insert(8)
 ll.insert(3)
 ll.insert(1)
 # print(LinkedList.reverse(ll))
-ll2 = LinkedList()
-ll2.insert(4)
-ll2.insert(9)
-ll2.insert(5)
+# ll2 = LinkedList()
+# ll2.insert(4)
+# ll2.insert(9)
+# ll2.insert(5)
 print(str(ll))
-print(str(ll2))
-print(LinkedList.zipLists(ll, ll2))
-
+# print(str(ll2))
+# print(LinkedList.zipLists(ll, ll2))
+print(ll.kth_from_end(3))
 
 # ll.insert(3)
 # #  # ll.insert(1)
