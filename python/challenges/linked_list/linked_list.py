@@ -176,7 +176,11 @@ class LinkedList:
         '''
         if k > self.length():
            return 'the number you entered is longer than the list'
-        list=LinkedList.reverse(self)
+        if k < 0:
+            k=abs(k)-1
+            list=self
+        else:    
+            list=LinkedList.reverse(self)
         current=list.head
         count=0
         while current:
@@ -185,7 +189,7 @@ class LinkedList:
                 break
             count+=1
             current=current.next
-        
+        print(str(self))
         return data
 
 ll = LinkedList()
@@ -198,10 +202,10 @@ ll.insert(1)
 # ll2.insert(4)
 # ll2.insert(9)
 # ll2.insert(5)
-print(str(ll))
+# print(str(ll))
 # print(str(ll2))
 # print(LinkedList.zipLists(ll, ll2))
-print(ll.kth_from_end(5))
+print(ll.kth_from_end(-1))
 
 # ll.insert(3)
 # #  # ll.insert(1)
