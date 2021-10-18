@@ -187,7 +187,7 @@ def test_kth_from_end2():
     expected=3
     assert actul==expected
 
-def test_kth_from_end2():
+def test_kth_from_end3():
     #input
     ll = LinkedList()
     ll.insert(2)
@@ -197,4 +197,25 @@ def test_kth_from_end2():
     #output
     actul=ll.kth_from_end(-1)
     expected=1
+    assert actul==expected
+def test_kth_from_end4():
+    #input
+    ll = LinkedList()
+    ll.insert(2)
+    #output
+    actul=ll.kth_from_end(0)
+    expected=2
+    assert actul==expected
+
+def test_kth_from_end5():
+    #input
+    ll = LinkedList()
+    ll.insert(2)
+    ll.insert(8)
+    ll.insert(3)
+    ll.insert(1) 
+    ll.insert(0) 
+    #output
+    actul=ll.kth_from_end(2)
+    expected=3
     assert actul==expected
