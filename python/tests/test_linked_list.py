@@ -147,3 +147,18 @@ def test_insert_after():
     expected='{ 2 } -> { 1 } -> { 22 } -> NULL'
     actul= str(ll)
     assert expected==actul
+
+def test_():
+  #input
+  ll = LinkedList()
+  ll.insert(2)
+  ll.insert(3)
+  ll.insert(1)
+  ll2 = LinkedList()
+  ll2.insert(4)
+  ll2.insert(9)
+  ll2.insert(5)
+  #output
+  expected='{ 1 } -> { 5 } -> { 3 } -> { 9 } -> { 2 } -> { 4 } -> NULL'
+  actul= str(LinkedList.zipLists(ll, ll2))
+  assert expected==actul

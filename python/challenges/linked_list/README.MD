@@ -152,7 +152,7 @@ Return: Linked List, zipped as noted below
 `head -> [1] -> [5] -> [3] -> [9] -> [2] -> [4] -> X`
 ## Approach & Efficiency
 
-
+![](/assets/whiteboard_zip.jpg)
 
 
 
@@ -161,9 +161,9 @@ Return: Linked List, zipped as noted below
 
 ## Solution
 
-Write a function called zip lists
-Arguments: 2 linked lists
-Return: Linked List, zipped as noted below
-Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list.
-Try and keep additional space down to O(1)
-You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
+[x]Write a function called zip lists
+[x]Arguments: 2 linked lists
+[x]Return: Linked List, zipped as noted below
+[x]Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list.
+[x]Try and keep additional space down to O(1)
+[x]You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
