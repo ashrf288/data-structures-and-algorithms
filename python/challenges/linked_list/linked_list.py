@@ -155,12 +155,27 @@ class LinkedList:
         list.head = prev
         return list
 
+
+    def length(self):
+        '''
+        this function returns the length of 
+        the linked list 
+        '''
+        current = self.head 
+        count = 0 
+        while (current):
+            count += 1
+            current = current.next
+        return count
+
     def kth_from_end(self,k):
         '''
          revrse the linked list 
          creat a counter if the counter value =k then return 
          node.data at that number
         '''
+        if k > self.length():
+           return 'the number you entered is longer than the list'
         list=LinkedList.reverse(self)
         current=list.head
         count=0
@@ -170,6 +185,7 @@ class LinkedList:
                 break
             count+=1
             current=current.next
+        
         return data
 
 ll = LinkedList()
@@ -185,7 +201,7 @@ ll.insert(1)
 print(str(ll))
 # print(str(ll2))
 # print(LinkedList.zipLists(ll, ll2))
-print(ll.kth_from_end(3))
+print(ll.kth_from_end(5))
 
 # ll.insert(3)
 # #  # ll.insert(1)
