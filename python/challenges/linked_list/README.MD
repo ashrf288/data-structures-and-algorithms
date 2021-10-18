@@ -152,7 +152,7 @@ Return: Linked List, zipped as noted below
 `head -> [1] -> [5] -> [3] -> [9] -> [2] -> [4] -> X`
 ## Approach & Efficiency
 
-![white](./assets/whiteboard_zip.jpg)
+![white](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/assets/whiteboard_zip.jpg)
 
 
 
