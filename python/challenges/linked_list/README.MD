@@ -131,3 +131,39 @@ adds a new node with the given new value immediately after the first node that h
 [x]Can successfully insert a node before the first node of a linked list
 []Can successfully insert after a node in the middle of the linked list
 [x]Can successfully insert a node after the last node of the linked list
+
+
+
+## lab 7
+
+# Challenge Summary
+
+
+Write a function called zip lists
+Arguments: 2 linked lists
+Return: Linked List, zipped as noted below
+
+`zipLists(list1, list2)`
+
+      Arg  list1                         	Arg list2	                    
+`head -> [1] -> [3] -> [2] ->`      `X	head -> [5] -> [9] -> [4] -> X`
+
+      Output	
+`head -> [1] -> [5] -> [3] -> [9] -> [2] -> [4] -> X`
+## Approach & Efficiency
+
+![](/assets/whiteboard_zip.jpg)
+
+
+
+
+
+
+## Solution
+
+[x]Write a function called zip lists
+[x]Arguments: 2 linked lists
+[x]Return: Linked List, zipped as noted below
+[x]Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list.
+[x]Try and keep additional space down to O(1)
+[x]You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
