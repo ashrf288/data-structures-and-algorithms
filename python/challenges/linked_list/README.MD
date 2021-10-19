@@ -112,7 +112,14 @@ adds a new node with the given new value immediately after the first node that h
 
 
 ## Whiteboard Process
+
 <!-- Embedded whiteboard image -->
+**append whiteboard**
+![append](/assets/append.jpg)
+**insert_befor whiteboard**
+![insert_befor](/assets/insert_befor.jpg)
+**insert_after whiteboard**
+![insert_after](/assets/insert_after.jpg)
 
 
 
@@ -143,7 +150,7 @@ k-th value from the end of a linked list.
 
 
 ## Approach & Efficiency
-![image](/python/assets/kth_elemnt.jpg)
+![image](/assets/kth_elemnt.jpg)
 
 
 ## Solution
@@ -178,7 +185,7 @@ Return: Linked List, zipped as noted below
 `head -> [1] -> [5] -> [3] -> [9] -> [2] -> [4] -> X`
 ## Approach & Efficiency
 
-![white](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/assets/whiteboard_zip.jpg)
+![white](/assets/whiteboard_zip.jpg)
 
 
 
@@ -188,8 +195,13 @@ Return: Linked List, zipped as noted below
 ## Solution
 
 [x]Write a function called zip lists
+
 [x]Arguments: 2 linked lists
+
 [x]Return: Linked List, zipped as noted below
+
 [x]Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list.
+
 [x]Try and keep additional space down to O(1)
+
 [x]You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
