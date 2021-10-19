@@ -72,7 +72,7 @@ class LinkedList:
 
     def append(self, value):
         """
-        this function will look for the nide that has node.next as none which
+        this function will look for the node that has node.next as none which
         will represnt the the last node then it will append the value(node)
         and it will give the new created node to that node .next
         """
@@ -97,6 +97,10 @@ class LinkedList:
         return "ll"
 
     def insertBefore(self, targetValue, value):
+        '''
+        takes in a node and add it befor the requierd node
+        
+        '''
         # create new node
         newNode = Node(value)
         # find target node to insert
@@ -114,6 +118,10 @@ class LinkedList:
                     node = node.next
 
     def insert_after(self, value, new_value):
+        '''
+        this will insert thr new_value after the node (value) in the 
+        linked list 
+        '''
         current = self.head
 
         while current is not None:
