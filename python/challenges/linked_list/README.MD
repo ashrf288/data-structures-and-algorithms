@@ -115,11 +115,11 @@ adds a new node with the given new value immediately after the first node that h
 
 <!-- Embedded whiteboard image -->
 **append whiteboard**
-![append](../assets/append.jpg)
+![append](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/assets/append.jpg)
 **insert_befor whiteboard**
-![insert_befor](/assets/insert_befor.jpg)
+![insert_befor](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/assets/insert_befor.jpg)
 **insert_after whiteboard**
-![insert_after](/assets/insert_after.jpg)
+![insert_after](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/assets/insert_after.jpg)
 
 
 
@@ -150,7 +150,7 @@ k-th value from the end of a linked list.
 
 
 ## Approach & Efficiency
-![image](/assets/kth_elemnt.jpg)
+![image](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/assets/kth_elemnt.jpg)
 
 
 ## Solution
@@ -185,7 +185,7 @@ Return: Linked List, zipped as noted below
 `head -> [1] -> [5] -> [3] -> [9] -> [2] -> [4] -> X`
 ## Approach & Efficiency
 
-![white](/assets/whiteboard_zip.jpg)
+![white](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/assets/whiteboard_zip.jpg)
 
 
 
