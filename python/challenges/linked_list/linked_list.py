@@ -192,6 +192,9 @@ class LinkedList:
         print(str(self))
         return data
 
+
+## testing ##
+
 ll = LinkedList()
 ll.insert(2)
 # ll.insert(8)

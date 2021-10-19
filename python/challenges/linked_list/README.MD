@@ -143,13 +143,14 @@ k-th value from the end of a linked list.
 
 
 ## Approach & Efficiency
+![image](/python/assets/kth_elemnt.jpg)
 
 
 ## Solution
 
 [x]argument: a number, k, as a parameter.
 [x]Return the node’s value that is k places from the tail of the linked list.
-[]write unit tests
+[x]write unit tests
 
 
 [x]Where k is greater than the length of the linked list

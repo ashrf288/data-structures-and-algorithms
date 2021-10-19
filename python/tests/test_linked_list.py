@@ -148,7 +148,7 @@ def test_insert_after():
     actul= str(ll)
     assert expected==actul
 
-def test_():
+def test_zipLists():
   #input
   ll = LinkedList()
   ll.insert(2)
@@ -163,7 +163,7 @@ def test_():
   actul= str(LinkedList.zipLists(ll, ll2))
   assert expected==actul
 
-
+##### lab 7 tests
 def test_kth_from_end():
     #input
     ll = LinkedList()
@@ -198,6 +198,7 @@ def test_kth_from_end3():
     actul=ll.kth_from_end(-1)
     expected=1
     assert actul==expected
+    
 def test_kth_from_end4():
     #input
     ll = LinkedList()
