@@ -115,7 +115,7 @@ adds a new node with the given new value immediately after the first node that h
 
 <!-- Embedded whiteboard image -->
 **append whiteboard**
-![append](./assets/append.jpg)
+![append](../assets/append.jpg)
 **insert_befor whiteboard**
 ![insert_befor](/assets/insert_befor.jpg)
 **insert_after whiteboard**
