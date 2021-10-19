@@ -148,7 +148,7 @@ def test_insert_after():
     actul= str(ll)
     assert expected==actul
 
-def test_():
+def test_zipLists():
   #input
   ll = LinkedList()
   ll.insert(2)
@@ -162,3 +162,61 @@ def test_():
   expected='{ 1 } -> { 5 } -> { 3 } -> { 9 } -> { 2 } -> { 4 } -> NULL'
   actul= str(LinkedList.zipLists(ll, ll2))
   assert expected==actul
+
+##### lab 7 tests
+def test_kth_from_end():
+    #input
+    ll = LinkedList()
+    ll.insert(2)
+    ll.insert(8)
+    ll.insert(3)
+    ll.insert(1) 
+    #output
+    actul=ll.kth_from_end(0)
+    expected=2
+    assert actul==expected
+def test_kth_from_end2():
+    #input
+    ll = LinkedList()
+    ll.insert(2)
+    ll.insert(8)
+    ll.insert(3)
+    ll.insert(1) 
+    #output
+    actul=ll.kth_from_end(2)
+    expected=3
+    assert actul==expected
+
+def test_kth_from_end3():
+    #input
+    ll = LinkedList()
+    ll.insert(2)
+    ll.insert(8)
+    ll.insert(3)
+    ll.insert(1) 
+    #output
+    actul=ll.kth_from_end(-1)
+    expected=1
+    assert actul==expected
+    
+def test_kth_from_end4():
+    #input
+    ll = LinkedList()
+    ll.insert(2)
+    #output
+    actul=ll.kth_from_end(0)
+    expected=2
+    assert actul==expected
+
+def test_kth_from_end5():
+    #input
+    ll = LinkedList()
+    ll.insert(2)
+    ll.insert(8)
+    ll.insert(3)
+    ll.insert(1) 
+    ll.insert(0) 
+    #output
+    actul=ll.kth_from_end(2)
+    expected=3
+    assert actul==expected
