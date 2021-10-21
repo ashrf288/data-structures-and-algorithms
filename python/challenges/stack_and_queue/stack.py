@@ -1,4 +1,4 @@
-from node import Node
+from challenges.stack_and_queue.node import Node
 
 
 class Stack:
