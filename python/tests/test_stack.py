@@ -41,3 +41,9 @@ def test_pop2(stack):
     expected=True
     actul=stack.is_empty()
     assert expected==actul
+
+def test_peek(stack):
+      #output
+    expected=2
+    actul=stack.peek()
+    assert expected==actul

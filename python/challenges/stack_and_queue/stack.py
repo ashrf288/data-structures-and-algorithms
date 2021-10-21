@@ -43,7 +43,7 @@ class Stack:
         Should raise exception when called on empty stack
         '''
         if not self.is_empty():
-           return self.top.next
+           return self.top.next.data
         else:
             raise Exception ('node is empty')    
 
