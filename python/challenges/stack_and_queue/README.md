@@ -58,7 +58,7 @@ Should raise exception when called on empty queue
 
 [x]Can successfully enqueue into a queue
 
-[] Can successfully enqueue multiple values into a queue
+[x] Can successfully enqueue multiple values into a queue
 
 []Can successfully dequeue out of a queue the expected value
 
