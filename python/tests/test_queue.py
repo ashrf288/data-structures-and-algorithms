@@ -23,9 +23,12 @@ def test_enqueue2(queue):
     assert  actul==expected
 
 def test_dequeue(queue):
-    queue.enqueue(2)
-    queue.enqueue(3)
     #output
     actul=1
     expected=queue.dequeue()
     assert  actul==expected
+
+def test_peek(queue):
+    #output
+    actul=1
+    expected=queue.peek()

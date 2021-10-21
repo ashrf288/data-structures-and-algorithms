@@ -62,7 +62,7 @@ Should raise exception when called on empty queue
 
 [x]Can successfully dequeue out of a queue the expected value
 
-[]Can successfully peek into a queue, seeing the expected value
+[x]Can successfully peek into a queue, seeing the expected value
 
 []Can successfully empty a queue after multiple dequeues
 

@@ -47,7 +47,7 @@ class Queue :
         Should raise exception when called on empty stack
 
         ''' 
-        if not self.is_empty:
+        if not self.is_empty():
              return self.front
         else:
              raise Exception('queue is empty')
