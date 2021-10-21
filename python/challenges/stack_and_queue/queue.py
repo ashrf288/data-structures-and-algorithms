@@ -33,8 +33,8 @@ class Queue :
         Removes the node from the front of the queue
         Should raise exception when called on empty queue
         '''
-        if not self.is_empty:
-            removed_node=self.front()
+        if not self.is_empty():
+            removed_node=self.front
             self.front=self.front.next
             removed_node.next=None
             return removed_node.data

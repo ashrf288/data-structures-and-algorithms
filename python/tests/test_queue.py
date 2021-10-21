@@ -13,11 +13,19 @@ def test_enqueue(queue):
     actul=1
     expected=queue.front.data
     assert  actul==expected
+
 def test_enqueue2(queue):
+    queue.enqueue(2)
+    queue.enqueue(3)
     #output
+    actul=3
+    expected=queue.rear.data
+    assert  actul==expected
+
+def test_dequeue(queue):
     queue.enqueue(2)
     queue.enqueue(3)
     #output
     actul=1
-    expected=queue.front.data
+    expected=queue.dequeue()
     assert  actul==expected
