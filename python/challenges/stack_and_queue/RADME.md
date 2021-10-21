@@ -24,3 +24,4 @@ This object should be aware of a default empty value assigned to top when the st
 
 [x]The class should contain the method push
 [x]The class should contain the method pop
+[x]The class should contain the method peek

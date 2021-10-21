@@ -15,6 +15,14 @@ class Stack:
         node.next=self.top
         self.top=node
 
+    def is_empty(self):
+        '''
+        Returns: Boolean indicating whether or not the stack is empty.
+        '''
+        if self.top==None:
+            return True
+        else:
+            return False
 
     def pop(self):
         '''
@@ -28,9 +36,17 @@ class Stack:
            return removed_node
         else:
             raise Exception ('node is empty')
-
-    def is_empty(self):
-        if self.top==None:
-            return True
+    
+    def peek(self):
+        '''
+        Returns: Value of the node located at the top of the stack
+        Should raise exception when called on empty stack
+        '''
+        if not self.is_empty():
+           return self.top.next
         else:
-            return False
+            raise Exception ('node is empty')    
+
+
+
+   
