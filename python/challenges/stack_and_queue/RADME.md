@@ -23,3 +23,4 @@
 This object should be aware of a default empty value assigned to top when the stack is created.
 
 [x]The class should contain the method push
+[x]The class should contain the method pop
