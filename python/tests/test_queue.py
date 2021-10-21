@@ -32,3 +32,14 @@ def test_peek(queue):
     #output
     actul=1
     expected=queue.peek()
+def test_dequeue(queue):
+    with pytest.raises(Exception):
+        queue.enqueue(2)
+        queue.enqueue(3)
+        queue.dequeue()
+        queue.dequeue()
+        queue.dequeue()
+        queue.dequeue()
+    
+
+   
