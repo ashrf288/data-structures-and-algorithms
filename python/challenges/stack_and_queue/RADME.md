@@ -34,3 +34,4 @@ This object should be aware of a default empty value assigned to top when the st
 [x]Can successfully pop off the stack
 [x]Can successfully empty a stack after multiple pops
 [x]Can successfully peek the next item on the stack
+[x]Can successfully instantiate an empty stack

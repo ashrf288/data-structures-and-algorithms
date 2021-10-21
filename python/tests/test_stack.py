@@ -47,3 +47,11 @@ def test_peek(stack):
     expected=2
     actul=stack.peek()
     assert expected==actul
+
+def test_initate_stack():
+    #INPUT
+    stack=Stack()
+     #output
+    expected=True
+    actul=stack.is_empty()
+    assert expected==actul
