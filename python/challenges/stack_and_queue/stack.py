@@ -32,8 +32,8 @@ class Stack:
         if not self.is_empty():
            removed_node=self.top
            self.top=self.top.next
-           self.top.next=None
-           return removed_node
+           removed_node.next=None
+           return removed_node.data
         else:
             raise Exception ('node is empty')
     

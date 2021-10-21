@@ -31,3 +31,5 @@ This object should be aware of a default empty value assigned to top when the st
 ## test ##
 [x]Can successfully push onto a stack
 [x]Can successfully push multiple values onto a stack
+[x]Can successfully pop off the stack
+[x]Can successfully empty a stack after multiple pops
