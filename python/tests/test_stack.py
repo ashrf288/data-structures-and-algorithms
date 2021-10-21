@@ -9,6 +9,7 @@ def stack():
    stack.push(2)
    stack.push(3)
   
+  
    return stack
 
 
@@ -25,8 +26,6 @@ def test_pushMultiple(stack):
     assert expected==actul
 
 def test_pop1(stack):
-      #input
-    stack.pop()
     #output
     expected=3
     actul=stack.pop()

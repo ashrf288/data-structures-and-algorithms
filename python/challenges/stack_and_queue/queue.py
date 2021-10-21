@@ -10,9 +10,13 @@ class Queue :
         adds a new node with that value to the back of the queue with an O(1) Time performance.
         '''
 
-        node =Node(value)
-        self.rear.next=None
-        self.rear=node 
+        node=Node(value)
+        if not self.rear:
+            self.front=node
+            self.rear=node
+        else:
+            self.rear.next=node
+            self.rear=node
 
     def is_empty(self):
         '''
@@ -35,4 +39,15 @@ class Queue :
             removed_node.next=None
             return removed_node.data
         else:
-            raise Exception ('queue is empty') 
+            raise Exception ('queue is empty')
+
+    def peek(self):
+        '''
+        Returns: Value of the node located at the front of the queue
+        Should raise exception when called on empty stack
+
+        ''' 
+        if not self.is_empty:
+             return self.front
+        else:
+             raise Exception('queue is empty')

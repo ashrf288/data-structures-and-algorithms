@@ -35,7 +35,7 @@ class Stack:
            removed_node.next=None
            return removed_node.data
         else:
-            raise Exception ('node is empty')
+            raise Exception ('stack is empty')
     
     def peek(self):
         '''

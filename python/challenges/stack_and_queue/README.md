@@ -49,6 +49,27 @@ This object should be aware of a default empty value assigned to top when the st
 [x]dequeue Returns: the value from node from the front of the queue Removes the node from the front of the queue
 Should raise exception when called on empty queue
 
+[x]peek : returns  Value of the node located at the front of the queue Should raise exception when called on empty stack
+
+[x] is_empty: returns: Boolean indicating whether or not the queue is empty
+
+## test ##
+
+
+[x]Can successfully enqueue into a queue
+
+[] Can successfully enqueue multiple values into a queue
+
+[]Can successfully dequeue out of a queue the expected value
+
+[]Can successfully peek into a queue, seeing the expected value
+
+[]Can successfully empty a queue after multiple dequeues
+
+[]Can successfully instantiate an empty queue
+
+[]Calling dequeue or peek on empty queue raises exception
+
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
