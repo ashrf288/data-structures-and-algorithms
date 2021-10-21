@@ -40,6 +40,13 @@ def test_dequeue(queue):
         queue.dequeue()
         queue.dequeue()
         queue.dequeue()
-    
+
+
+def test_emptyQueue():
+    queue=Queue()
+
+    expected=True
+    actul=queue.is_empty()
+    assert expected==actul
 
    

@@ -64,9 +64,9 @@ Should raise exception when called on empty queue
 
 [x]Can successfully peek into a queue, seeing the expected value
 
-[]Can successfully empty a queue after multiple dequeues
+[x]Can successfully empty a queue after multiple dequeues
 
-[]Can successfully instantiate an empty queue
+[x]Can successfully instantiate an empty queue
 
 []Calling dequeue or peek on empty queue raises exception
 
