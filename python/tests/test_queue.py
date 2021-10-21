@@ -49,4 +49,10 @@ def test_emptyQueue():
     actul=queue.is_empty()
     assert expected==actul
 
+def test_raise_exception():
+    queue=Queue()
+    with pytest.raises(Exception):
+        queue.peek()
+
+
    
