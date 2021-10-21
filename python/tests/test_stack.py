@@ -55,3 +55,16 @@ def test_initate_stack():
     expected=True
     actul=stack.is_empty()
     assert expected==actul
+
+def test_aise_exception1():
+    #input
+    stack=Stack()
+    #output
+    with pytest.raises(Exception):
+         stack.pop()
+def test_aise_exception2():
+    #input
+    stack=Stack()
+    #output
+    with pytest.raises(Exception):
+         stack.peek()
