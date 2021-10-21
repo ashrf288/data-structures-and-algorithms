@@ -21,3 +21,5 @@
 
 [x]Create a Stack class that has a top property. It creates an empty Stack when instantiated.
 This object should be aware of a default empty value assigned to top when the stack is created.
+
+[x]The class should contain the method push
