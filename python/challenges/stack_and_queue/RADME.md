@@ -46,6 +46,10 @@ This object should be aware of a default empty value assigned to top when the st
 
 [x]enqueue dds a new node with that value to the back of the queue
 
+[x]dequeue Returns: the value from node from the front of the queue Removes the node from the front of the queue
+Should raise exception when called on empty queue
+
+
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
