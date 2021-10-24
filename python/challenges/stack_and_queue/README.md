@@ -22,7 +22,7 @@ This object should be aware of a default empty value assigned to top when the st
 [x]The class should contain the method is_empty
 
 
-## test ##
+## Stack test ##
 [x]Can successfully push onto a stack
 
 [x]Can successfully push multiple values onto a stack
@@ -53,7 +53,7 @@ Should raise exception when called on empty queue
 
 [x] is_empty: returns: Boolean indicating whether or not the queue is empty
 
-## test ##
+## queue test ##
 
 
 [x]Can successfully enqueue into a queue
@@ -71,6 +71,9 @@ Should raise exception when called on empty queue
 [x]Calling dequeue or peek on empty queue raises exception
 
 
+
+
+ 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 

@@ -51,3 +51,13 @@ class Queue :
              return self.front
         else:
              raise Exception('queue is empty')
+    # def __str__(self):
+    #     return self
+        
+
+
+
+queue=Queue()
+queue.enqueue(1)
+print(queue)
+print('a')
