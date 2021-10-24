@@ -1,9 +1,9 @@
 
 ## code challenge 11
 
-[]Create a new class called pseudo queue.
+[x]Create a new class called pseudo queue.
 
-[]Do not use an existing Queue.
+[x]Do not use an existing Queue.
 
 []Instead, this PseudoQueue class will implement our standard queue interface (the two methods listed below),
 

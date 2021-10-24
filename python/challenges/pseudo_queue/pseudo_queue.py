@@ -3,14 +3,41 @@ from challenges.stack_and_queue.stack import Stack
 
 
 class Pseudo_queue:
+     '''
+     Keep 2 stacks, let's call them head and tail you will be
+     able to push to the head stack and pop from the tail stack 
+     '''
      def __init__(self,front=None,rear=None):
         self.front=front
         self.rear=rear
-        self.inbox=Stack()
-        self.outbox=Stack()
+        self.head_stack=Stack()
+        self.tail_stack=Stack()
  
-     def enqueue(self):
-         pass
+     def enqueue(self,value):
+         '''
+          Enqueue:
+           Push the new element onto head stack 
+         '''
+         self.head_stack.push(value)
+
+
 
      def dequeue(self):
-         pass
+         '''
+         Dequeue:
+          If tail_stack is empty, refill it by 
+          popping each element from head stack and pushing it onto tail stack
+          Pop and return the top element from tailstack
+           Using this method, each element will be in each stack exactly once - meaning 
+           each element will be pushed twice and popped twice, giving amortized constant time operations.
+         '''
+         if self.tail_stack.isEmpty() :
+            while not self.head_stack.isEmpty() :
+               self.tail_stack.push(self.head_stack.pop())
+            
+         return self.tail_stack.pop()
+
+
+
+
+
