@@ -28,7 +28,14 @@ Input	                           Output	                  Internal State
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
+enquque
+![enqueue](/assets/enqueue.jpg)
 
+dequeue
+
+![enqueue](/assets/dequeue.jpg)
+
+dequeue
 ## API
 <!-- Description of each method publicly available to your Stack and Queue-->
 
@@ -46,7 +53,7 @@ Input	                           Output	                  Internal State
            Using this method, each element will be in each stack exactly once - meaning 
            each element will be pushed twice and popped twice, giving amortized constant time operations.
 
-           
+
 # unit tests link
 
 ![](tests/test_psudo_queue.py)
