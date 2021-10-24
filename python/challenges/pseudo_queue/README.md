@@ -29,11 +29,12 @@ Input	                           Output	                  Internal State
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
 enquque
-![enqueue](/assets/enqueue.jpg)
+
+![enqueue](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/assets/enqueue.jpg)
 
 dequeue
 
-![enqueue](/assets/dequeue.jpg)
+![dequeue](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/assets/dequeue.jpg)
 
 dequeue
 ## API
