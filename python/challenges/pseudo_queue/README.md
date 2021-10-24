@@ -17,7 +17,7 @@ Input	                       Args	                                              
 [10]->[15]->[20]            	5	                                        [5]->[10]->[15]->[20]
 
 
-[] dequeue Arguments: none Extracts a value from the PseudoQueue, using a first-in, first-out approach.h
+[x] dequeue Arguments: none Extracts a value from the PseudoQueue, using a first-in, first-out approach.
 
 Input	                           Output	                  Internal State
 [5]->[10]->[15]->[20]	             20	                      [5]->[10]->[15])
