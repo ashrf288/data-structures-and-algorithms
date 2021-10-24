@@ -33,7 +33,7 @@ To run your tests
 | 3 |  [binary_search](python/challenges/array_binary_search/README.md)|
 | 4 |  [linked_list](python/challenges/linked_list/README.MD)|
 | 5 |  [stacks and queue](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/README.md)  |
-| 4 | [pseudo_queue](challenges/pseudo_queue/README.md) |   
+| 4 | [pseudo_queue](python/challenges/pseudo_queue/README.md) |   
 | 5 |  |   
 | 6 |  |   
 | 7 |  |   
