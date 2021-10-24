@@ -7,18 +7,21 @@ class Pseudo_queue:
      Keep 2 stacks, let's call them head and tail you will be
      able to push to the head stack and pop from the tail stack 
      '''
-     def __init__(self,front=None,rear=None):
-        self.front=front
-        self.rear=rear
+     def __init__(self):
         self.head_stack=Stack()
         self.tail_stack=Stack()
+        self.front=self.head_stack.top
+        self.rear=self.tail_stack.top
  
      def enqueue(self,value):
          '''
           Enqueue:
            Push the new element onto head stack 
          '''
-         self.head_stack.push(value)
+         node =  Node(value)
+         node.next=self.front
+         self.front=node
+         self.head_stack.push(node)
 
 
 
