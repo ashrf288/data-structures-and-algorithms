@@ -5,12 +5,12 @@
 
 [x]Do not use an existing Queue.
 
-[]Instead, this PseudoQueue class will implement our standard queue interface (the two methods listed below),
+[x]Instead, this PseudoQueue class will implement our standard queue interface (the two methods listed below),
 
-[]Internally, utilize 2 Stack instances to create and manage the queue
+[x]Internally, utilize 2 Stack instances to create and manage the queue
 
 ## Methods:
-[]enqueue Arguments: value Inserts value into the PseudoQueue, using a first-in, first-out approach.
+[x]enqueue Arguments: value Inserts value into the PseudoQueue, using a first-in, first-out approach.
 
 enqueue(value)
 Input	                       Args	                                              Output
