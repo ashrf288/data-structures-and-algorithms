@@ -22,7 +22,7 @@ This object should be aware of a default empty value assigned to top when the st
 [x]The class should contain the method is_empty
 
 
-## test ##
+## Stack test ##
 [x]Can successfully push onto a stack
 
 [x]Can successfully push multiple values onto a stack
@@ -53,7 +53,7 @@ Should raise exception when called on empty queue
 
 [x] is_empty: returns: Boolean indicating whether or not the queue is empty
 
-## test ##
+## queue test ##
 
 
 [x]Can successfully enqueue into a queue
@@ -71,6 +71,31 @@ Should raise exception when called on empty queue
 [x]Calling dequeue or peek on empty queue raises exception
 
 
+
+## code challenge 11
+
+[]Create a new class called pseudo queue.
+
+[]Do not use an existing Queue.
+
+[]Instead, this PseudoQueue class will implement our standard queue interface (the two methods listed below),
+
+[]Internally, utilize 2 Stack instances to create and manage the queue
+
+## Methods:
+[]enqueue Arguments: value Inserts value into the PseudoQueue, using a first-in, first-out approach.
+
+enqueue(value)
+Input	                       Args	                                              Output
+[10]->[15]->[20]            	5	                                        [5]->[10]->[15]->[20]
+
+
+[] dequeue Arguments: none Extracts a value from the PseudoQueue, using a first-in, first-out approach.h
+
+Input	                           Output	                  Internal State
+[5]->[10]->[15]->[20]	             20	                      [5]->[10]->[15])
+
+ 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
