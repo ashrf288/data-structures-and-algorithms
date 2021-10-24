@@ -28,11 +28,25 @@ Input	                           Output	                  Internal State
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
+
 ## API
 <!-- Description of each method publicly available to your Stack and Queue-->
 
 
+1-  Keep 2 stacks, let's call them head and tail you will be
+     able to push to the head stack and pop from the tail stack
 
+2-  Enqueue:
+           Push the new element onto head stac
+
+3-   Dequeue:
+          If tail_stack is empty, refill it by 
+          popping each element from head stack and pushing it onto tail stack
+          Pop and return the top element from tailstack
+           Using this method, each element will be in each stack exactly once - meaning 
+           each element will be pushed twice and popped twice, giving amortized constant time operations.
+
+           
 # unit tests link
 
 ![](tests/test_psudo_queue.py)
