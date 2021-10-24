@@ -34,11 +34,11 @@ class Pseudo_queue:
            Using this method, each element will be in each stack exactly once - meaning 
            each element will be pushed twice and popped twice, giving amortized constant time operations.
          '''
-         if self.tail_stack.isEmpty() :
-            while not self.head_stack.isEmpty() :
+         if self.tail_stack.is_empty() :
+            while not self.head_stack.is_empty() :
                self.tail_stack.push(self.head_stack.pop())
             
-         return self.tail_stack.pop()
+         return self.tail_stack.pop().data
 
 
 
