@@ -32,7 +32,7 @@ If pref is not "dog" or "cat" then return null.
 <!-- Embedded whiteboard image -->
 
 
-![animal]()
+![animal](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/assets/animal.jpg)
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
