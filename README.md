@@ -34,7 +34,7 @@ To run your tests
 | 4 |  [linked_list](python/challenges/linked_list/README.MD)|
 | 5 |  [stacks and queue](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/README.md)  |
 | 4 | [pseudo_queue](python/challenges/pseudo_queue/README.md) |   
-| 5 |  |   
+| 5 | [animal shelter](python/challenges/AnimalShelter/README.md) |   
 | 6 |  |   
 | 7 |  |   
 | 8 |  |   
