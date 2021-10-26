@@ -38,7 +38,7 @@ Input      	Output                    	Why
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 
-![](./challenges/assets/validate_brackets.jpg)
+![](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/assets/validate_brackets.jpg)
 
 
 ## Approach & Efficiency
