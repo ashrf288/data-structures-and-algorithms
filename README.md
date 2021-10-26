@@ -35,6 +35,6 @@ To run your tests
 | 5 |  [stacks and queue](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/README.md)  |
 | 4 | [pseudo_queue](python/challenges/pseudo_queue/README.md) |   
 | 5 | [animal shelter](python/challenges/AnimalShelter/README.md) |   
-| 6 |  |   
+| 6 | [stack_queue_brackets](python/challenges/stack_queue_brackets/README.md) |   
 | 7 |  |   
 | 8 |  |   
