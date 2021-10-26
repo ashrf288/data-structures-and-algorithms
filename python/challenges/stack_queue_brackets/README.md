@@ -38,7 +38,7 @@ Input      	Output                    	Why
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 
-![](assets/validate_brackets.jpg)
+![](./challenges/assets/validate_brackets.jpg)
 
 
 ## Approach & Efficiency
