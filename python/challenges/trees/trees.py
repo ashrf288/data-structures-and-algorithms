@@ -50,4 +50,21 @@ class Binary_tree():
                   recur(node.right)    
       recur(self.root) 
       return order      
-   
+    def post_order(self):
+      """
+    A binary tree method which returns a list of items that it contains in (post order) 
+           left >> right >> root
+    input: None
+    output: tree items(list)
+    we used the function (recur) to help with recursion inside the class
+      """
+      order=[]
+      def recur(node):
+          if node:
+              if node.left:
+                  recur(node.left)
+              if node.right:
+                  recur(node.right)   
+              order.append(node.data) 
+      recur(self.root) 
+      return order      

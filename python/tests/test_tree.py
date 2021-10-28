@@ -38,3 +38,12 @@ def test_in_order(tree):
   # assert actual is same as expected
   assert actual == expected
   print("test_post_order_ passed")  
+
+def test_post_order(tree):
+  # set expected list
+  expected = ["d", "b", "c", "a"]
+  # set actual to return value of post_order call
+  actual = tree.post_order()
+  # assert actual is same as expected
+  assert actual == expected
+  print("test_post_order_ passed")  
