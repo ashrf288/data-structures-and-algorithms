@@ -13,33 +13,41 @@ class Binary_tree():
 
     def pre_order(self):
       """
-    A binary tree method which returns a list of items that it contains
-
+    A binary tree method which returns a list of items that it contains in (pre order) 
+       root >> left >> right
     input: None
 
-    output: tree items
-
-    sub method : walk () to make the recursion staff
+    output: tree items(list)
+    we used the function (recur) to help with recursion inside the class
       """
-    # list_of_items = []
-    # def walk(node):
-    #   if node:
-    #     list_of_items.append(node.data)
-    #     if node.left:
-    #       walk(node.left)
-    #     if node.right:
-    #       walk(node.right)
-
-    #  walk(self.root)
-    #  return list_of_items
-      litsa=[]
+      order=[]
       def recur(node):
           if node:
-              litsa.append(node.data)
-              print(node.left)
+              order.append(node.data)
               if node.left:
                   recur(node.left)
               if node.right:
                   recur(node.right)    
       recur(self.root) 
-      return litsa      
+      return order 
+
+
+    def in_order(self):
+      """
+    A binary tree method which returns a list of items that it contains in (in order) 
+       left >> root >> right
+    input: None
+    output: tree items(list)
+    we used the function (recur) to help with recursion inside the class
+      """
+      order=[]
+      def recur(node):
+          if node:
+              if node.left:
+                  recur(node.left)
+              order.append(node.data)
+              if node.right:
+                  recur(node.right)    
+      recur(self.root) 
+      return order      
+   

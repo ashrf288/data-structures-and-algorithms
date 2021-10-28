@@ -1,10 +1,11 @@
 from challenges.trees.trees import Binary_tree,Node
+import pytest
 
 
+@pytest.fixture
 
-
-def test_first():
-      # Create tree instance
+def tree():
+  # Create tree instance
   tree = Binary_tree()
 
   # Create Nodes for 1,2,3,4
@@ -18,11 +19,22 @@ def test_first():
 
   # Add Root node to tree
   tree.root=a_node 
-  
+  return tree
+
+def test_pre_order(tree):
   # set expected list
   expected = ["a", "b", "d", "c"]
   # set actual to return value of post_order call
   actual = tree.pre_order()
+  # assert actual is same as expected
+  assert actual == expected
+  print("test_post_order_ passed")
+
+def test_in_order(tree):
+  # set expected list
+  expected = ["d", "b", "a", "c"]
+  # set actual to return value of post_order call
+  actual = tree.in_order()
   # assert actual is same as expected
   assert actual == expected
   print("test_post_order_ passed")  
