@@ -1,4 +1,5 @@
 from challenges.trees.trees import Binary_tree,Node
+from challenges.trees.Binary_Search_Tree import Binary_search_tree
 import pytest
 
 
@@ -20,6 +21,7 @@ def tree():
   # Add Root node to tree
   tree.root=a_node 
   return tree
+
 
 def test_pre_order(tree):
   # set expected list
@@ -47,3 +49,34 @@ def test_post_order(tree):
   # assert actual is same as expected
   assert actual == expected
   print("test_post_order_ passed")  
+
+
+@pytest.fixture
+
+def binary_tree():
+  # Arrange
+  # Create tree instance
+  binary_tree = Binary_search_tree()
+
+  # Create Nodes for A,B,C,D
+  a_node = Node('A')
+  b_node = Node('B')
+  c_node = Node('C')
+  d_node = Node('D')
+  a_node.left = b_node
+  a_node.right = c_node
+  b_node.left = d_node
+
+  # Add Root node to tree
+  binary_tree.root=a_node 
+  return binary_tree
+
+
+def test_bfs(binary_tree):
+  # set expected list
+  expected = ["A", "B", "C", "D"]
+  # set actual to return value of bfs call
+  actual = binary_tree.bfs()
+  # assert actual is same as expected
+  assert actual == expected
+  print("test_bfs passed")
