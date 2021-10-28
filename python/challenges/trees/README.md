@@ -10,7 +10,7 @@
 
 
 ## Binary Tree
-[]Create a Binary Tree class
+[x]Create a Binary Tree class
 
 []Define a method for each of the depth first traversals:
 
