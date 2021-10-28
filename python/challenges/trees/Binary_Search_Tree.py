@@ -110,17 +110,48 @@ class Binary_search_tree(Binary_tree):
         if front.right:
             breadth.enqueue(front.right)
      return list_of_items
-    # while breadth.peek():
-    #         front = breadth.dequeue()
-    #         list_of_items += [front.data]
+    
 
-    #         if front.left:
-    #          breadth.enqueue(front.left)
+    def add(self,value):
+        if not self.root:
+            self.root= Node(value)
+        else :
+            temp = self.root
+            while temp:
+                if value < temp.data:
+                    if not temp.left:
+                        temp.left = Node(value)
+                        break
+                    temp = temp.left
+                else:
+                    if not temp.right:
+                        temp.right = Node(value)
+                        break
+                    temp = temp.right
+        pass
 
-    #         if front.right:
-    #          breadth.enqueue(front.right)
+    def __contains__(self,value):
+        """
+        search for a value in the tree
+        input : value
+        output : True/False
+        """
+        if not self.root:
+            raise Exception("Empty Tree !!!")
 
-    # return list_of_items
+        else:
+            temp = self.root
+            while temp:
+                if temp.data == value:
+                    return True
+                elif temp.data > value:
+                    if not temp.left:
+                        return False
+                    temp = temp.left
+                else:
+                    if not temp.right:
+                        return False
+                    temp = temp.right
 
 
 

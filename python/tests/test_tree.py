@@ -50,7 +50,7 @@ def test_post_order(tree):
   assert actual == expected
   print("test_post_order_ passed")  
 
-
+# ******************** binary search tree tests **********************
 @pytest.fixture
 
 def binary_tree():
@@ -80,3 +80,62 @@ def test_bfs(binary_tree):
   # assert actual is same as expected
   assert actual == expected
   print("test_bfs passed")
+
+
+
+def test_add_once():
+     # Arrange
+    # Create tree instance
+    tree = Binary_search_tree()
+    # add "A" to the tree
+    tree.add('A')
+    # set expected list
+    expected = "A"
+    # set actual to the tree root value
+    actual = tree.root.data
+    # assert actual is same as expected
+    assert actual == expected
+
+def test_add_twice():
+    # Arrange
+    # Create tree instance
+    tree = Binary_search_tree()
+    # add "A" to the tree
+    tree.add("A")
+    tree.add("B")
+    # set expected list
+    expected = ["A","B"]
+    # set actual to the tree root value
+    actual = tree.pre_order()
+    # assert actual is same as expected
+    assert actual == expected
+
+def test_contains_value():
+    # Arrange
+    # Create tree instance
+    tree = Binary_search_tree()
+    # add "A" to the tree
+    tree.add("A")
+    tree.add("B")
+    tree.add("C")
+    # set expected list
+    expected = True
+    # set actual to the tree root value
+    actual = tree.__contains__("B")
+    # assert actual is same as expected
+    assert actual == expected
+
+def test_not_contains_value():
+   # Arrange
+    # Create tree instance
+    tree = Binary_search_tree()
+    # add "A" to the tree
+    tree.add("A")
+    tree.add("B")
+    tree.add("C")
+    # set expected list
+    expected = False
+    # set actual to the tree root value
+    actual = tree.__contains__("E")
+    # assert actual is same as expected
+    assert actual == expected
