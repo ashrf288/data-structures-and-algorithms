@@ -71,10 +71,15 @@ class Binary_tree():
 
 
     def maximum_value(self):
+          '''
+          Find the maximum value stored in the tree. 
+          Arguments: none
+          Returns: number
+          '''
           arr=self.pre_order()
           max_val=self.root.data
           for i in arr:
-              if int(i) >max_val:
+              if int(i) > max_val:
                   max_val==int(i)
           return max_val
 
