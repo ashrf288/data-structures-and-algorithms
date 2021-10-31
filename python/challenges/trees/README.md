@@ -87,3 +87,6 @@ conatins() -> time: O(n) -- space :O(1)
 [x] write unit test
 
 ## Approach & Efficiency
+
+
+![](/assets/tree_max.jpg)

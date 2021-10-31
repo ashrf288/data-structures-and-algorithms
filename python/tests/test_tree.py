@@ -156,3 +156,17 @@ def test_max_value():
    actul=tree.maximum_value()
 
    assert expected==actul
+def test_max_value2():
+   tree = Binary_search_tree()
+   tree.add(1)
+   tree.add(2)
+   tree.add(-12)
+   tree.add(18)
+   tree.add(0)
+
+   #output
+
+   expected = 18
+   actul=tree.maximum_value()
+
+   assert expected==actul
