@@ -67,7 +67,21 @@ class Binary_tree():
                   recur(node.right)   
               order.append(node.data) 
       recur(self.root) 
-      return order      
+      return order     
+
+
+    def maximum_value(self):
+          '''
+          Find the maximum value stored in the tree. 
+          Arguments: none
+          Returns: number
+          '''
+          arr=self.pre_order()
+          max_val=self.root.data
+          for i in arr:
+              if int(i) > max_val:
+                  max_val=int(i)
+          return max_val
 
 
 
@@ -155,3 +169,18 @@ class Binary_search_tree(Binary_tree):
 
 
 
+if __name__=='__main__':
+
+  bt=Binary_search_tree()
+  bt.add(5)      
+  bt.add(3)
+  bt.add(6)
+  bt.add(4)
+  bt.add(1)
+  bt.add(2)
+  print(bt.pre_order()) 
+
+
+
+        #         5
+        #     6        3
