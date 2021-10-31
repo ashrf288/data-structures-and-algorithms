@@ -74,15 +74,16 @@ conatins() -> time: O(n) -- space :O(1)
 ## Feature Tasks
 
 
-[]Write the following method for the Binary Tree class
+[x]Write the following method for the Binary Tree class
 
-[]find maximum value
+[x]find maximum value
 
-[]Arguments: none
+[x]Arguments: none
 
-[]Returns: number
+[x]Returns: number
 
-[]Find the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
+[x]Find the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
 
+[x] write unit test
 
 ## Approach & Efficiency

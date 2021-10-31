@@ -80,7 +80,7 @@ class Binary_tree():
           max_val=self.root.data
           for i in arr:
               if int(i) > max_val:
-                  max_val==int(i)
+                  max_val=int(i)
           return max_val
 
 
