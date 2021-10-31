@@ -89,4 +89,4 @@ conatins() -> time: O(n) -- space :O(1)
 ## Approach & Efficiency
 
 
-![](/assets/tree_max.jpg)
+![](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/assets/tree_max.jpg)
