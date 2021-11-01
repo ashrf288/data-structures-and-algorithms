@@ -37,4 +37,9 @@ To run your tests
 | 5 | [animal shelter](python/challenges/AnimalShelter/README.md) |   
 | 6 | [stack_queue_brackets](python/challenges/stack_queue_brackets/README.md) |   
 | 7 | [trees](python/challenges/trees/README.md) |   
-| 8 |  |   
+| 8 | [breadth_first_tree](challenges/tree_breadth_first/README.md) |   
+| 9 |  |   
+| 10 |  |   
+| 11 |  |   
+| 12 |  |   
+| 13 |  |   
