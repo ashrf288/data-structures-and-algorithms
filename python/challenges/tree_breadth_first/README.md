@@ -12,6 +12,11 @@ Return: list of all values in the tree, in the order they were encountered
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 
+
+![](/home/ashrf288/401/data-structures-and-algorithms/python/assets/breadth_first.png)
+
+
+
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
