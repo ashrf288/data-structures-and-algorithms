@@ -1,9 +1,9 @@
 from challenges.tree_breadth_first.tree_breadth import (breadth_first,Node,Binary_search_tree)
 
+import pytest
 
-
-def test_breadth_first():
-    #input
+@pytest.fixture
+def tree():
     tree=Binary_search_tree()
     a_node = Node('A')
     b_node = Node('B')
@@ -19,6 +19,11 @@ def test_breadth_first():
     c_node.left = f_node
     c_node.right = g_node
     tree.root=a_node
+    return tree
+
+def test_breadth_first(tree):
+    #input
+
     #output
     expected=['A', 'B', 'C', 'D', 'E', 'F', 'G']
     actul=breadth_first(tree)
