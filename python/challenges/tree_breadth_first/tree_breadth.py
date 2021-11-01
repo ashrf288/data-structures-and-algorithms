@@ -170,8 +170,13 @@ class Binary_search_tree(Binary_tree):
 def breadth_first(tree):
     """
     A binary tree method which returns a list of items that it contains
-    input: None
-    output: tree items
+    input: a binary search tree
+    output: tree items in breadth order 
+
+    create a stack and then enquque the tree head to the stack then create an empty list that will store
+    the values by order 
+    loop untill the stack is empty and  remove each elemnt from left to right 
+    and then return the list 
     """
     breadth = Queue()
     breadth.enqueue(tree.root)
