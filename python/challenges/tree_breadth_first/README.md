@@ -13,7 +13,7 @@ Return: list of all values in the tree, in the order they were encountered
 <!-- Embedded whiteboard image -->
 
 
-![](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/assets/breadth_first.png)
+![](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/assets/breadth_first.jpg)
 
 
 
