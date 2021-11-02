@@ -37,7 +37,7 @@ To run your tests
 | 5 | [animal shelter](python/challenges/AnimalShelter/README.md) |   
 | 6 | [stack_queue_brackets](python/challenges/stack_queue_brackets/README.md) |   
 | 7 | [trees](python/challenges/trees/README.md) |   
-| 8 | [breadth_first_tree](python/challenges/tree_breadth_first/README.md) |   
+| 8 | [breadth_first_tree](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/challenges/tree_breadth_first/README.md) |   
 | 9 |  |   
 | 10 |  |   
 | 11 |  |   
