@@ -38,7 +38,7 @@ To run your tests
 | 6 | [stack_queue_brackets](python/challenges/stack_queue_brackets/README.md) |   
 | 7 | [trees](python/challenges/trees/README.md) |   
 | 8 | [breadth_first_tree](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/challenges/tree_breadth_first/README.md) |   
-| 9 |  |   
+| 9 |  [tree_fizz_buzz](python/challenges/tree_fizz_buzz/README.md)  |   
 | 10 |  |   
 | 11 |  |   
 | 12 |  |   
