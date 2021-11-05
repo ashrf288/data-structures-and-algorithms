@@ -1,20 +1,24 @@
-from challenges.tree_fizz_buzz.tree_fizz_buzz import (FizzBuzzTree,Node,binary_tree)
-
+from challenges.tree_fizz_buzz.tree_fizz_buzz import *
 
 
 
 
 def  test_fizz_buzz():
-    bt = binary_tree()
-    bt.root = Node(12)
-    bt.root.left = Node(15)
-    bt.root.right = Node(5)
-    bt.root.left.right = Node(6)
-    bt.root.left.left = Node(8)
-    bt.root.right.right=Node(9)
-    bt.root.right.right.left=Node(4)
-    bt.root.left.left.right=Node(5)
-    bt.root.left.right.left = Node(11)
-    expected = ['Fizz','FizzBuzz','8','Buzz','Fizz','11','Buzz','Fizz','4']
-    actual = FizzBuzzTree(bt)
-    assert expected == actual
+    tree = Binary_search_tree()
+    a_node = Node(3)             #        3       
+    b_node = Node(6)             #  6     4    15
+    c_node = Node(9)             #  9
+    d_node = Node(4)              # 5
+    e_node = Node(5)
+    f_node = Node(15)
+
+
+    a_node.child.append(b_node)
+    a_node.child.append(d_node)
+    b_node.child.append(c_node)
+    c_node.child.append(e_node)
+    a_node.child.append(f_node)
+    tree.root = a_node
+    expected=['Fizz', 'Fizz', '4', 'FizzBuzz', 'Fizz', 'Buzz']
+    actul=fizz_buzz(tree)
+    assert actul==expected
