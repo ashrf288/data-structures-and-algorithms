@@ -1,58 +1,97 @@
-class Node():
-    def __init__(self, value = None):
-        self.value = value
-        self.left = None
-        self.right = None
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.child = []
 
-    def __str__(self):
-        return str(self.value)
 
-class binary_tree():
+class Queue:
+    def __init__(self, collection=[]):
+        self.data = collection
+
+    def peek(self):
+        if len(self.data):
+            return True
+        return False
+
+    def enqueue(self, item):
+        self.data.append(item)
+
+    def dequeue(self):
+        return self.data.pop(0)
+
+
+class Binary_search_tree:
     def __init__(self):
         self.root = None
-        self.output = []
 
-    def pre_order(self, root):
-        # root >> left >> right
-        pre_order_output=[]
-        if root:
-            pre_order_output.append(root.value)
-            pre_order_output = pre_order_output + self.pre_order(root.left)
-            pre_order_output = pre_order_output + self.pre_order(root.right)
-        return pre_order_output
-        
-def fizzBuzz(node):
-    '''
-    If the value is divisible by 3, replace the value with “Fizz”
-    If the value is divisible by 5, replace the value with “Buzz”
-    If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
-    If the value is not divisible by 3 or 5, simply turn the number into a String
+    # def bfs(self):
+    #     """
+    #     A binary tree method which returns a list of items that it contains
+    #     input: None
+    #     output: tree items
+    #     """
+    #     breadth = Queue()
+    #     breadth.enqueue(self.root)
 
-    '''
-    if node.value % 15 == 0:
-        return'FizzBuzz'
-    elif node.value %3 == 0:
-        return'Fizz'
-    elif node.value % 5 == 0:
-        return'Buzz'
+    #     list_of_items = []
+    #     while breadth.peek():
+    #         front = breadth.dequeue()
+    #         list_of_items += [front.data]
+    #         if front.child:
+    #             for item in front.child:
+    #                 breadth.enqueue(item)
+    #     return list_of_items
+
+
+def fizz_buzz_maker(node):
+
+    if not node.data % 5 and not node.data % 3:
+        return "FizzBuzz"
+    elif not node.data % 3:
+        return "Fizz"
+    elif not node.data % 5:
+        return "Buzz"
     else:
-        return str(node.value)
+        return str(node.data)
 
-def FizzBuzzTree(tree):
-    '''
-     Arguments: k-ary tree
-      Return: new k-ary tree
-      Determine whether or not the value of each node is divisible by 3, 5 or both.
-     Create a new tree with the same structure as the original, 
-    '''
-    if not tree.root:
-        return []
-    new_binary_tree = binary_tree()
-    def traverser(node):
-        new_binary_tree.output = new_binary_tree.output + [fizzBuzz(node)]
-        if node.left:           
-            traverser(node.left)
-        if node.right:
-            traverser(node.right)
-        return new_binary_tree.output
-    return traverser(tree.root) 
+
+def fizz_buzz(tree):
+
+    """
+    A binary tree method which returns a k-tree of items 
+    input: k-tree
+    output: k-tree
+    """
+    breadth = Queue()
+    breadth.enqueue(tree.root)
+    while breadth.peek():
+        current = breadth.dequeue()
+        current.data = fizz_buzz_maker(current)
+        if current.child:
+            for item in current.child:
+                breadth.enqueue(item)
+     
+    tree2 = Binary_search_tree()
+    tree2=tree
+    
+    return tree2
+
+
+tree = Binary_search_tree()
+a_node = Node(3)
+b_node = Node(6)
+c_node = Node(9)
+d_node = Node(4)
+e_node = Node(5)
+f_node = Node(15)
+
+
+a_node.child.append(b_node)
+a_node.child.append(d_node)
+b_node.child.append(c_node)
+c_node.child.append(e_node)
+a_node.child.append(f_node)
+tree.root = a_node
+
+
+print(fizz_buzz(tree).bfs())
