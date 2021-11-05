@@ -24,23 +24,23 @@ class Binary_search_tree:
     def __init__(self):
         self.root = None
 
-    # def bfs(self):
-    #     """
-    #     A binary tree method which returns a list of items that it contains
-    #     input: None
-    #     output: tree items
-    #     """
-    #     breadth = Queue()
-    #     breadth.enqueue(self.root)
+    def bfs(self):
+        """
+        A binary tree method which returns a list of items that it contains
+        input: None
+        output: tree items
+        """
+        breadth = Queue()
+        breadth.enqueue(self.root)
 
-    #     list_of_items = []
-    #     while breadth.peek():
-    #         front = breadth.dequeue()
-    #         list_of_items += [front.data]
-    #         if front.child:
-    #             for item in front.child:
-    #                 breadth.enqueue(item)
-    #     return list_of_items
+        list_of_items = []
+        while breadth.peek():
+            front = breadth.dequeue()
+            list_of_items += [front.data]
+            if front.child:
+                for item in front.child:
+                    breadth.enqueue(item)
+        return list_of_items
 
 
 def fizz_buzz_maker(node):
