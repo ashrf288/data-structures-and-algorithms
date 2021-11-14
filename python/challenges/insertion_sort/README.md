@@ -24,4 +24,4 @@ No additional space is being created. This array is being sorted in place…keep
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
 
-[blog.md link](challenges/insertion_sort/BLOG.md)
+[blog.md link](python/challenges/insertion_sort/BLOG.md)
