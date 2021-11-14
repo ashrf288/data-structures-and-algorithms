@@ -39,7 +39,7 @@ To run your tests
 | 7 | [trees](python/challenges/trees/README.md) |   
 | 8 | [breadth_first_tree](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/challenges/tree_breadth_first/README.md) |   
 | 9 |  [tree_fizz_buzz](python/challenges/tree_fizz_buzz/README.md)  |   
-| 10 | [insertion sort](challenges/insertion_sort/README.md) |   
+| 10 | [insertion sort](/challenges/insertion_sort/README.md) |   
 | 11 |  |   
 | 12 |  |   
 | 13 |  |   
