@@ -11,7 +11,7 @@
 <!-- Embedded whiteboard image -->
 
 
-![](/assets/whiteboard_sort_merge.jpg)
+![](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/assets/whiteboard_sort_merge.jpg)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
