@@ -50,7 +50,7 @@ ALGORITHM Merge(left, right, arr)
 **pass 1**
 
 
-![](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/assets/step_1.jpg)
+![](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/assets/step1_sort.jpg)
 
 
 
