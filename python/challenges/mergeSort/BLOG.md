@@ -50,7 +50,9 @@ ALGORITHM Merge(left, right, arr)
 **pass 1**
 
 
-![](/assets/step1_sort.jpg)
+![](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/assets/step_1.jpg)
+
+
 
 first the array is splitted into half with the same sizes , These two parts are sorted by recursive calls to give us 2 arrays 
 
@@ -60,7 +62,7 @@ first the array is splitted into half with the same sizes , These two parts are 
 
 **pass 2**
 
-![](/assets/sort_pass2.jpg)
+![](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/assets/sort_pass2.jpg)
 
 
 then we recursivlly calls the function with first half nd then the secound half which will divide the the 2 arrays into 4 arrays
@@ -78,7 +80,7 @@ then we recursivlly calls the function with first half nd then the secound half 
 **pass 3** 
 
 
-![](/assets/sort_pass3.jpg)
+![](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/assets/sort_pass3.jpg)
 
 
 We keep dividing it until the subpart of the list consists of only one element
@@ -86,7 +88,7 @@ We keep dividing it until the subpart of the list consists of only one element
 
 **pass 4**
 
-![](/assets/sort_pass4.jpg)
+![](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/assets/sort_pass4.jpg)
 
 we will combine the two elements in the given sorted way 
 
@@ -94,7 +96,7 @@ we will combine the two elements in the given sorted way
 **pass 5**
 
 
-![](/assets/sort_pass5.jpg)
+![](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/assets/sort_pass5.jpg)
 
 
 we will combine the 4 lists of elements and convert them into a list of tow elements after sorting
@@ -103,7 +105,7 @@ we will combine the 4 lists of elements and convert them into a list of tow elem
 **pass 5**
 
 
-![](/assets/sort_pass6.jpg)
+![](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/assets/sort_pass6.jpg)
 
 then we get the final result which is a full sorted array of the original array
 
