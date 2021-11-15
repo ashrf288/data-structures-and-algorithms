@@ -30,4 +30,4 @@ No additional space is being created. This array is being sorted in place…keep
 
 
 
-[BLOG.MD](/challenges/mergeSort.py/BLOG.md)
+[BLOG.MD](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/challenges/mergeSort/BLOG.md)
