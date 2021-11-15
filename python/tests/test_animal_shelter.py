@@ -2,7 +2,6 @@ from challenges.AnimalShelter.AnimalShelter import AnimalShelter
 
 
 
-
 def test_add_animal():
     #input
     animal=AnimalShelter()
