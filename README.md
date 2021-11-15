@@ -40,6 +40,6 @@ To run your tests
 | 8 | [breadth_first_tree](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/challenges/tree_breadth_first/README.md) |   
 | 9 |  [tree_fizz_buzz](python/challenges/tree_fizz_buzz/README.md)  |   
 | 10 | [insertion sort](python/challenges/insertion_sort/README.md) |   
-| 11 |  |   
+| 11 | [merge_sort](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/challenges/mergeSort/README.md) |   
 | 12 |  |   
 | 13 |  |   
