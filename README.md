@@ -42,4 +42,4 @@ To run your tests
 | 10 | [insertion sort](python/challenges/insertion_sort/README.md) |   
 | 11 | [merge_sort](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/challenges/mergeSort/README.md) |   
 | 12 | [quick_sort](/python/challenges/quickSort/README.MD) |   
-| 13 |  |   
+| 13 | [hash_table](/python/challenges/hashtable/README.md) |   
