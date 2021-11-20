@@ -45,15 +45,15 @@ def test_hashtable_hash(key, hashcode, hashtable):
 
 def test_hashtable_get_returns_value(hashtable):
 
-    expected = "Hamza"
-    hashtable.add("name", "Hamza")
+    expected = "Ashrf"
+    hashtable.add("name", "Ashrf")
     assert hashtable.get("name") == expected
 
 
 def test_hashtable_get_returns_correct_last_value(hashtable):
 
     expected = "Alan"
-    hashtable.add("name", "Hamza")
+    hashtable.add("name", "Ashrf")
     hashtable.add("name", "Alan")
     assert hashtable.get("name") == expected
 
