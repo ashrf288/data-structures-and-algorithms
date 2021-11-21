@@ -43,3 +43,4 @@ To run your tests
 | 11 | [merge_sort](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/challenges/mergeSort/README.md) |   
 | 12 | [quick_sort](/python/challenges/quickSort/README.MD) |   
 | 13 | [hash_table](/python/challenges/hashtable/README.md) |   
+| 13 | [hashmap_repeated_word](python/challenges/hashmap_repeated_word/README.md) |   
