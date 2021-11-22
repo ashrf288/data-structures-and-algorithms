@@ -44,3 +44,4 @@ To run your tests
 | 12 | [quick_sort](/python/challenges/quickSort/README.MD) |   
 | 13 | [hash_table](/python/challenges/hashtable/README.md) |   
 | 13 | [hashmap_repeated_word](python/challenges/hashmap_repeated_word/README.md) |   
+| 13 | [tree_intersection](python/challenges/tree_intersection/README.md) |   
