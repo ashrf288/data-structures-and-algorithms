@@ -1,3 +1,5 @@
+import re
+
 class Node:
     def __init__(self, value=None, next_=None):
         """
@@ -64,7 +66,8 @@ def repeated_word(string):
     hash_map=HashTable()
     list=string.split(' ')
     for word in list:
-        word=word.lower().strip(',')
+        word=word.lower()
+        word=re.sub(f'\W','',word)
         index = hash_map.add(word,word)
         if index in arr_of_index:
             return word
