@@ -137,7 +137,7 @@ def tree_intersection(bt1,bt2):
     bt1_data=bt1.bfs()
     bt2_data=bt2.bfs()
     for data in bt1_data:
-        intersections.append(ht.add(data,data))
+        intersections.append(ht.add(str(data),data))
     for data in bt2_data:
         index=ht.add(str(data),data)
         if  index in intersections:
@@ -149,16 +149,16 @@ def tree_intersection(bt1,bt2):
 
 
 
-
+100,160,125,175,200,350,500
 def createTree():
     bt=Binary_search_tree()
-    a_node = Node('1')
-    b_node = Node('2')
-    c_node = Node('3')
-    d_node = Node('4')
-    e_node = Node('5')
-    f_node = Node('6')
-    g_node = Node('7')
+    a_node = Node(150)
+    b_node = Node(100)
+    c_node = Node(250)
+    d_node = Node(75)
+    e_node = Node(3)
+    f_node = Node(5)
+    g_node = Node(7)
     a_node.left = b_node
     a_node.right = c_node
     b_node.left = d_node
@@ -170,13 +170,13 @@ def createTree():
 
 def createTree2():
     bt=Binary_search_tree()
-    a_node = Node('1')
-    b_node = Node('8')
-    c_node = Node('8')
-    d_node = Node('4')
-    e_node = Node('5')
-    f_node = Node('6')
-    g_node = Node('7')
+    a_node = Node(2)
+    b_node = Node(150)
+    c_node = Node(4)
+    d_node = Node(5)
+    e_node = Node(6)
+    f_node = Node(7)
+    g_node = Node(8)
     a_node.left = b_node
     a_node.right = c_node
     b_node.left = d_node
