@@ -43,5 +43,6 @@ To run your tests
 | 11 | [merge_sort](https://github.com/ashrf288/data-structures-and-algorithms/blob/main/python/challenges/mergeSort/README.md) |   
 | 12 | [quick_sort](/python/challenges/quickSort/README.MD) |   
 | 13 | [hash_table](/python/challenges/hashtable/README.md) |   
-| 13 | [hashmap_repeated_word](python/challenges/hashmap_repeated_word/README.md) |   
-| 13 | [tree_intersection](python/challenges/tree_intersection/README.md) |   
+| 14 | [hashmap_repeated_word](python/challenges/hashmap_repeated_word/README.md) |   
+| 15 | [tree_intersection](python/challenges/tree_intersection/README.md) |   
+| 16 | [hashmap_left_join](python/challenges/hashmap_left_join/README.md) |   
