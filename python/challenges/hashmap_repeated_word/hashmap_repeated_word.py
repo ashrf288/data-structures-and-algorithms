@@ -66,6 +66,7 @@ def repeated_word(string):
     hash_map=HashTable()
     list=string.split(' ')
     for word in list:
+        
         word=word.lower()
         word=re.sub(f'\W','',word)
         index = hash_map.add(word,word)
