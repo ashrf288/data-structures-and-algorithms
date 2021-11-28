@@ -7,7 +7,9 @@ class Queue :
         self.rear=rear
     def enqueue(self,value):
         '''
-        adds a new node with that value to the back of the queue with an O(1) Time performance.
+        adds a new node with that value 
+        to the back of the queue with an O(1)
+         Time performance.
         '''
 
         node=Node(value)
@@ -20,7 +22,8 @@ class Queue :
 
     def is_empty(self):
         '''
-        Returns: Boolean indicating whether or not the stack is empty.
+        Returns: Boolean indicating whether or 
+        not the stack is empty.
         '''
         if self.front==None:
             return True

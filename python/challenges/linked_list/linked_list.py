@@ -150,7 +150,8 @@ class LinkedList:
     # Function to reverse the linked list
     def reverse(self,list):
         '''
-        this method will reverse the order of the nodes inside the list 
+        this method will reverse the order of the nodes
+         inside the list 
 
          '''
         prev = None

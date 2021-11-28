@@ -14,18 +14,6 @@ class Vertex:
     """
     self.value = value
 
-class Queue:
-  def __init__(self):
-    self.dq = deque()
-  
-  def enqueue(self, value):
-    self.dq.append(value)
-
-  def dequeue(self):
-    self.dq.pop()
-
-  def __len__(self):
-    return len(self.dq)
 
 
 class Stack:
@@ -51,7 +39,21 @@ class Stack:
 		Return the top node in a stack.
 		"""
     self.dq.pop()
+    
 
+
+class Queue:
+  def __init__(self):
+    self.dq = deque()
+  
+  def enqueue(self, value):
+    self.dq.appendleft(value)
+
+  def dequeue(self):
+    self.dq.pop()
+
+  def __len__(self):
+    return len(self.dq)
 class Edge:
   """ 
     a class for Adding a new edge between two nodes in the graph
@@ -107,31 +109,33 @@ class Graph:
   def get_neighbors(self, vertex):
     """ """
     return self.__adjacency_list.get(vertex, [])
-  def return_nodes(self, data):
-        return data
+     
+
+  def breath_first_search(self,start_vertex):
+    output=[]
+    queue = Queue()
+    visited = set()
+    queue.enqueue(start_vertex)
+    visited.add(start_vertex)
+    while len(queue):
+      current_vertex = queue.dequeue()
+      output.append(current_vertex)
+      for i in self.__adjacency_list[current_vertex]:
+        if i[0] not in visited:
+          i=i[0]
+          visited.add(i)
+          queue.enqueue(i)
+    return output
+
+
   
-  def breadth_first_search(self, start_vertex, action=(lambda _: None)):
-        queue = Queue()
-        visited = set()
-        nodes = list()
 
-        queue.enqueue(start_vertex)
 
-        while len(queue):
-            current_vertex = queue.dequeue()
-            visited.add(current_vertex)
-            nodes.append(current_vertex)
 
-            neighbors = self.get_neighbors(current_vertex)
 
-            for edge in neighbors:
 
-                neighbor = edge.vertex
-                if neighbor not in visited:
-                    visited.add(neighbor)
-                    queue.enqueue(neighbor)
 
-        return action(nodes)
+
 
     
 
