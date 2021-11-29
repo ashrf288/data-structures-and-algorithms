@@ -48,3 +48,6 @@ To run your tests
 | 16 | [hashmap_left_join](python/challenges/hashmap_left_join/README.md) |   
 | 17 | [graph](python/challenges/graph/README.md) |   
 | 17 | [breadth_first_readme](python/challenges/graph/breadth_first_readme.md) |   
+| 18 | [breadth_first_readme](python/challenges/graph/breadth_first_readme.md) |   
+| 19 | [bussines_trip_graph](python/challenges/graph/bussines.md) |   
+   
