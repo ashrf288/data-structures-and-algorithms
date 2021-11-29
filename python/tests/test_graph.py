@@ -2,6 +2,10 @@ import pytest
 
 from challenges.graph.graph import  Graph, Vertex
 
+
+
+
+
 def test_add_node():
   graph = Graph()
   expected = "test"
@@ -90,3 +94,6 @@ def test_get_neighbors():
     assert neighbor_edge.vertex.value == 'banana'
 
     assert neighbor_edge.weight == 44
+
+
+
